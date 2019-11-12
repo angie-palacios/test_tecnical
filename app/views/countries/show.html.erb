@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @country.name %>
+</p>
+
+<p>
+  <strong>Iata code:</strong>
+  <%= @country.iata_code %>
+</p>
+
+<p>
+  <strong>Number country code:</strong>
+  <%= @country.number_country %>
+</p>
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>
