@@ -4,11 +4,25 @@
     <title>TestTecnical</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <div class="p-3 mb-2 bg-dark text-white ">
+    <ul class="nav text-right bg-dark">
+    <%- if user_signed_in? %>   
+      <li class="nav-item d-inline p-2 bg-dark text-white">
+        <%= link_to 'Salir', destroy_user_session_path, method: :delete, id:'button_sing_out' %>
+      </li>
+    <% else %>
+      <li class="nav-item">
+        <%= link_to 'Iniciar', new_user_session_path, id:'button_log_in' %>
+        <%= link_to ' Registrarme', new_user_registration_path, id:'button_sign_up' %>
+      </li>
+    <% end %>
+    </ul>
+  </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
