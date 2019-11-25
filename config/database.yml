@@ -23,6 +23,7 @@ default: &default
 
 development:
   <<: *default
+  url: 'postgres://test_tecnical:test_tecnical@192.168.5.99:5432/test_tecnical_dev'
   database: test_tecnical_dev
   username: test_tecnical
   password: test_tecnical
@@ -59,6 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  url: 'postgres://test_tecnical:test_tecnical@192.168.5.99:5432/test_tecnical_test'
   database: test_tecnical_test
   username: test_tecnical
   password: test_tecnical
