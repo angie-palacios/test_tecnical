@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  test_tecnical:
+    build: .
+    command: rails server --binding=0.0.0.0 -p 3001
+    volumes:
+      - .:/test_tecnical
+    ports:
+      - "3001:3001"
