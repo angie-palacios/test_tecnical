@@ -7,7 +7,7 @@ end
 
 
 # Bootstrap
-gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap', '~> 4.0.0'
 # JQuery
 gem 'jquery-rails'
 # Popper
