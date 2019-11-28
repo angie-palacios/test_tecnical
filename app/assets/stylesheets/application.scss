@@ -12,22 +12,3 @@
  *
  */
  @import "bootstrap";
-
- .nav{
-     padding: 20px;
- }
- ul{
-     align-content: right;
- }
- .nav > li > a {
-     display: inline;
- }
- #button_log_in, #button_sign_up, #button_sing_out {
-    background-color: rgb(220, 154, 0);
-    border-radius: 15px;
-    color:white;
- }
- #button_log_in:hover, #button_sign_up:hover, #button_sing_out:hover {
-    background-color: rgb(107, 107, 107);
-    color:white;
- }
