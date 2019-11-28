@@ -13,20 +13,22 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :country_name %>
+    <%= form.text_field :name, class:"form-control", id: :country_name %>
   </div>
 
   <div class="field">
     <%= form.label :iata_code %>
-    <%= form.text_field :iata_code, id: :country_iata_code %>
+    <%= form.text_field :iata_code, class:"form-control", id: :country_iata_code %>
   </div>
 
   <div class="field">
     <%= form.label :number_country %>
-    <%= form.text_field :number_country, id: :country_number_country %>
+    <%= form.number_field :number_country, class:"form-control", id: :country_number_country %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <br>
+
+  <div class="action actions text-center">
+    <%= form.submit class:"btn btn-light" %>
   </div>
 <% end %>

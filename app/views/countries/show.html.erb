@@ -1,20 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="row justify-content-center m-0">
+  <div class="col-4 bg-dark text-white rounded p-4">
 
-<p>
-  <strong>Name:</strong>
-  <%= @country.name %>
-</p>
+    <p>
+      <strong>Name:</strong>
+      <%= @country.name %>
+    </p>
 
-<p>
-  <strong>Iata code:</strong>
-  <%= @country.iata_code %>
-</p>
+    <p>
+      <strong>Iata code:</strong>
+      <%= @country.iata_code %>
+    </p>
 
-<p>
-  <strong>Number country code:</strong>
-  <%= @country.number_country %>
-</p>
+    <p>
+      <strong>Number country code:</strong>
+      <%= @country.number_country %>
+    </p>
 
 
-<%= link_to 'Edit', edit_country_path(@country) %> |
-<%= link_to 'Back', countries_path %>
+    <%= link_to 'Edit', edit_country_path(@country) %> |
+    <%= link_to 'Back', countries_path %>
+  </div>
+</div>
