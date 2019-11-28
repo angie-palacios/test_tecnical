@@ -1,5 +1,7 @@
 <% if user_signed_in? %>
-    <h1 class="display-1 text-primary">Bienvenido <%= current_user.email %></h1>
+    <h1>Bienvenido <%= current_user.name %></h1>
+    <%= link_to 'New Country', new_country_path %> |
+    <%= link_to 'Tabla', countries_path %>
 <% else %>
-    <h1 class="display-1 text-primary">☺</h1>
+    <img class="img-fluid img-thumbnail m-0" style="height=80%" src="https://tuswallpapersgratis.com/wp-content/plugins/download-wallpaper-resized/wallpaper.php?x=3840&y=2160&file=https://tuswallpapersgratis.com/wp-content/uploads/2013/03/Art-watercolor-autumn-red-maple-forest-with-forest-path_1024x768-741683.jpeg" >
 <% end %>
